@@ -1,0 +1,22 @@
+#include <iostream>
+#include "Entry.h"
+int main(int argc, const char * argv[])
+{
+    string name, lastname, email;
+    
+    cin >> name;
+    cin >> lastname;
+    cin >> email;
+    
+    Entry myEntry;
+    
+    myEntry.setName(name);
+    myEntry.setLastname(lastname);
+    myEntry.setEmail(email);
+    
+    cout << std::endl;
+
+    myEntry.print();
+    
+    return 0;
+}
